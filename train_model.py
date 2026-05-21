@@ -10,9 +10,9 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms, models
 
-base_directory = "/Users/konigmaxim/Desktop/Курсовая 2026"
-path_to_dataset = os.path.join(base_directory, "dataset.csv")
-images_directory = os.path.join(base_directory, "images")
+script_dir = os.path.dirname(os.path.abspath(__file__))
+path_to_dataset = os.path.join(script_dir, "dataset.csv")
+images_directory = os.path.join(script_dir, "images")
 
 batch_size = 8
 epochs = 30
@@ -318,7 +318,7 @@ print("\nФинальный результат:")
 print(classification_report(all_labels, y_pred_opt, target_names=label_columns, zero_division=0))
 
 #Сохранение.
-MODEL_PATH = os.path.join(base_directory, "final_model_balanced.pth")
+MODEL_PATH = os.path.join(script_dir, "final_model_balanced.pth")
 torch.save(final_model.state_dict(), MODEL_PATH)
 
 
