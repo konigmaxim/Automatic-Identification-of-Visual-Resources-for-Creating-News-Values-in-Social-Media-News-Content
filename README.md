@@ -45,6 +45,8 @@ pip install -r requirements.txt
 
 ## Обучение модели
 
+Готовую модель можно скачать по ссылке: https://huggingface.co/konigmaxim/news_values/resolve/main/final_model_balanced.pth
+
 Скрипт `train_model.py` выполняет:
 
 - Загрузку данных из Excel (dataset.csv) и проверку наличия изображений.
