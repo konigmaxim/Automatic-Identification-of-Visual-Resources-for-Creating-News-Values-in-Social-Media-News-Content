@@ -11,7 +11,6 @@
 ├── dataset.csv             # таблица с метками и ссылками на изображения
 ├── images/                 # папка с изображениями (image1.png … imageN.png)
 ├── train_model.py          # основной скрипт для обучения, кросс‑валидации и оценки
-├── final_model_balanced.pth # сохранённые веса лучшей модели
 └── requirements.txt        # зависимости Python
 ```
 
